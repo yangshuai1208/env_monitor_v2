@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"fire_f103_1\startup_stm32f103xb.o"
+"fire_f103_1\main.o"
+"fire_f103_1\gpio.o"
+"fire_f103_1\stm32f1xx_it.o"
+"fire_f103_1\stm32f1xx_hal_msp.o"
+"fire_f103_1\stm32f1xx_hal_gpio_ex.o"
+"fire_f103_1\stm32f1xx_hal.o"
+"fire_f103_1\stm32f1xx_hal_rcc.o"
+"fire_f103_1\stm32f1xx_hal_rcc_ex.o"
+"fire_f103_1\stm32f1xx_hal_gpio.o"
+"fire_f103_1\stm32f1xx_hal_dma.o"
+"fire_f103_1\stm32f1xx_hal_cortex.o"
+"fire_f103_1\stm32f1xx_hal_pwr.o"
+"fire_f103_1\stm32f1xx_hal_flash.o"
+"fire_f103_1\stm32f1xx_hal_flash_ex.o"
+"fire_f103_1\stm32f1xx_hal_exti.o"
+"fire_f103_1\system_stm32f1xx.o"
+--strict --scatter "Fire_F103_1\Fire_F103_1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Fire_F103_1.map" -o Fire_F103_1\Fire_F103_1.axf
